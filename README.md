@@ -4,7 +4,7 @@ A neural network learns the optimal **cost-to-go** (value function) of an **unde
 
 > Final project (Assignment 03, option A: *Learning for Control*) for the **Advanced Optimization-Based Robot Control** course, University of Trento, Prof. Andrea Del Prete.
 > Authors: **Alessandro Rossi**, **Lorenzo Franco**.
-> 📄 Full report: [`Franco_Rossi_Report.pdf`](Franco_Rossi_Report.pdf) · Assignment: [`assignment.pdf`](assignment.pdf)
+> Full report: [`Franco_Rossi_Report.pdf`](Franco_Rossi_Report.pdf) · Assignment: [`assignment.pdf`](assignment.pdf)
 
 <p align="center">
   <img src="Report/pics/mpcs.png" width="90%" alt="Comparison of the three MPC controllers">
