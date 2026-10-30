@@ -1,0 +1,11 @@
+numpy
+casadi
+torch
+matplotlib
+tqdm
+pandas
+plotly
+adam-robotics[casadi]
+example-robot-data
+pin
+l4casadi
