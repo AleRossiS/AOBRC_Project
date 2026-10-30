@@ -14,11 +14,18 @@ A neural network learns the optimal **cost-to-go** (value function) of an **unde
 
 ## Demo
 
+<p align="center">
+  <img src="media/mpc_comparison.gif" width="85%" alt="Swing-up of the double pendulum with the three MPC controllers">
+  <br>
+  <em>Swing-up from the same initial state: 🔴 short horizon (M = 14) without terminal cost · 🔵 short horizon + learned terminal cost · 🟢 long horizon (N + M = 114).</em>
+</p>
+
+More videos (click to watch on YouTube):
+
 | Initial condition 1 | Initial condition 2 | Multiple runs |
 |:---:|:---:|:---:|
 | [![IC 1](https://img.youtube.com/vi/dTzMtQ39pxc/hqdefault.jpg)](https://youtu.be/dTzMtQ39pxc) | [![IC 2](https://img.youtube.com/vi/vgQT7q9oPIk/hqdefault.jpg)](https://youtu.be/vgQT7q9oPIk) | [![Multiple runs](https://img.youtube.com/vi/99hOP7C9648/hqdefault.jpg)](https://youtu.be/99hOP7C9648) |
 
-Click a thumbnail to watch the video on YouTube.
 
 ---
 
@@ -87,6 +94,7 @@ The full results table and the metrics used for the comparison are in the [repor
 │
 ├── SimplePendulum/                           # First version on the single pendulum (same pipeline)
 │
+├── media/                                    # GIF used in this README
 ├── Report/                                   # LaTeX sources of the report
 ├── Franco_Rossi_Report.pdf                   # Final report
 ├── assignment.pdf                            # Assignment text
