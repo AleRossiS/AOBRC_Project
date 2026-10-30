@@ -1,0 +1,96 @@
+
+% Impostazioni generali
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+%\usepackage[italian]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage[svgnames]{xcolor}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{scrhack}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{eurosym}
+\usepackage[export]{adjustbox}
+\usepackage{refcount} % for \getrefnumber
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{eso-pic}
+%\usepackage{transparent}
+\usepackage{pdfpages}
+\usepackage{silence}
+\usepackage{setspace} % Per regolare lo spazio
+\usepackage{chngcntr}
+\usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+
+\DeclareCaptionLabelFormat{andtable}{#1~#2  \&  \tablename~\thetable}
+\DeclareCaptionLabelFormat{andfigure}{\figurename~\thefigure \,  \&  \tablename~\thetable}
+
+\WarningsOff[everypage] % per rimuovere il warning su everypage
+
+% Matematica
+\usepackage{amsmath, amssymb, amsfonts}
+%\usepackage{physics}
+\usepackage{braket}
+\usepackage{siunitx}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% Prima pagina, sfondo, draft
+\usepackage{frontespizio}
+\usepackage{tikz}
+\usepackage[pages=some]{background}
+
+% Linea sopra le pagine
+\usepackage{fancyhdr}
+%\setlength{\headheight}{14.5pt} % Valore richiesto dal tuo log
+%\addtolength{\topmargin}{-2.5pt} Con queste due righe sparisce l'immagine di sfondo lol
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\rightmark}
+\fancyfoot[CO]{\thepage}
+
+% Bibliografia
+%\usepackage[sorting=none, backend=biber, style=numeric-comp, maxnames=99]{biblatex}
+%\addbibresource{Impaginazione/biblio.bib}
+
+% Citazioni
+%\usepackage{csquotes}
+
+% Abstract
+\newenvironment{abstract}%
+  {\cleardoublepage%
+   \null \vfill\begin{center}%
+   \bfseries \abstractname \end{center}}%
+  {\vfill\null}
+
+% Glossari (facoltativi: da decommentare se usati)
+% \usepackage{glossaries}
+% \makeglossaries
+
+% Indice analitico
+\usepackage{imakeidx}
+\makeindex
+
+% Simboli e notazioni
+\usepackage{nomencl}
+\makenomenclature
+
+% Grafici e disegni
+\usepackage{float} % da mettere nel preambolo
+

@@ -1,0 +1,19 @@
+# LaTeX compilation files
+*.aux
+*.bbl
+*.bbl_SAVE_ERROR
+*.bbl-SAVE-ERROR
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.synctex.gz.sum.synctex
+*.toc
+*.idx
+*.ilg
+*.ind
+*.nlo

@@ -1,0 +1,59 @@
+% !TEX program = xelatex
+\documentclass[12pt,a4paper,oneside]{book}
+
+% 1. Pacchetti fondamentali
+\usepackage{scrhack} % Sistema i conflitti tra KOMA e pacchetti standard
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[margin=2cm]{geometry}
+\usepackage{comment}
+\usepackage{setspace}
+
+% IMPORTANTE: Rimosso inputenc (incompatibile con XeLaTeX)
+
+\input{Impaginazione/packages}
+
+\setstretch{1}
+
+% 2. Formattazione Capitoli (Rimuove "Chapter X" ma mantiene il numero per i riferimenti)
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter \, }{0pt}{} %ho rimosso il punto
+\titlespacing*{\chapter}{0pt}{-20pt}{10pt}
+
+\begin{document}
+
+\frontmatter
+\input{Impaginazione/inizio}
+
+\mainmatter
+
+% --- INTRODUZIONE ---
+\chapter{Introduction} % Rimosso asterisco
+\markright{\MakeUppercase{Introduction}}
+\input{capitoli/intro.tex}
+
+% --- FASE 1 ---
+\chapter{Dataset Generation} % Rimosso asterisco e setcounter manuale
+\markright{\MakeUppercase{Dataset Generation}}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}} % Set figure numbering to Chapter.Figure I had the issue of it being Chapter.Section.Figure (1.0.1)
+\renewcommand{\thetable}{\thechapter.\arabic{table}} % Do the same for tables
+\renewcommand{\theequation}{\thechapter.\arabic{equation}} % Do the same for equations
+\input{capitoli/fase1.tex}\label{cap1}
+
+% --- FASE 2 ---
+\chapter{Neural Network Training} % Rimosso asterisco
+\markright{\MakeUppercase{Neural Network Training}}
+\input{capitoli/fase2.tex}
+
+% --- FASE 3 ---
+\chapter{MPCs Comparison} % Rimosso asterisco
+\markright{\MakeUppercase{MPCs Comparison}}
+\input{capitoli/fase3.tex}
+
+% --- Conclusion ---
+\chapter{Conclusion} % Rimosso asterisco
+\input{capitoli/conclusion.tex}
+
+
+\end{document}

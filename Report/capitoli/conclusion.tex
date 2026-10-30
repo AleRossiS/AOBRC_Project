@@ -1,0 +1,8 @@
+In the end the results obtained were acceptable, even if not excellent. The MPC developed showed to be effective in making the pendulum reach the desired configuration, but the performance could surely be improved.
+
+
+\noindent We believe that the main source of improvement could be the redefinition of the cost function in (\ref{eq:ocp}). As currently defined, it outputs values across several orders of magnitude, which likely makes the neural network training more difficult. Also as mentioned in the previous section, the cost (\ref{eq:ocp}) sometimes was lower with the MPC with short horizon and no final cost, even if the performance was visibly worse.\\
+
+\noindent Despite these observations, we decided to not change the cost function, because it would have required more time to define and tune a new cost to obtain good results. 
+
+\noindent Moreover, the current results already provide a clear validation of the approach's potential, making further refinement of the cost function unnecessary for this proof of concept.
